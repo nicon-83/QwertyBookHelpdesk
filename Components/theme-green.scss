@@ -1,0 +1,8 @@
+@import '~vue-material/dist/theme/engine';
+
+
+@include md-register-theme('green', ( primary: md-get-palette-color(green, A700), accent: md-get-palette-color(red, A200), text-primary-on-primary: white, theme: light ));
+
+@include md-register-theme('green-dark', ( primary: md-get-palette-color(green, 900), accent: md-get-palette-color(red, 400), primary-on-background: md-get-palette-color(lightgreen, 700), text-primary-on-primary: white, theme: dark ));
+
+@import '~vue-material/dist/theme/all';

@@ -1,0 +1,51 @@
+{
+  "name": "Asterisk-Vue-js",
+  "private": true,
+  "version": "0.0.0",
+  "author": "Vladimir Makedonov",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-json-strings": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-syntax-import-meta": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@types/webpack-env": "^1.13.5",
+    "aspnet-webpack": "^2.0.3",
+    "babel-loader": "^8.0.0-beta.6",
+    "@babel/preset-env": "^7.0.0",
+    "css-loader": "^0.25.0",
+    "event-source-polyfill": "^0.0.7",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "file-loader": "^0.9.0",
+    "isomorphic-fetch": "^2.2.1",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.13.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^2.7.0",
+    "webpack-hot-middleware": "^2.21.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "drawer": "0.0.2",
+    "vue": "^2.5.13",
+    "vue-drawer": "^0.1.0",
+    "vue-loader": "^14.0.3",
+    "vue-material": "^1.0.0-beta-10.2",
+    "vue-md-date-picker": "^1.0.16",
+    "vue-resource": "^1.5.1",
+    "vue-router": "^3.0.1",
+    "vue-router-sync": "^0.1.0",
+    "vue-template-compiler": "^2.5.13",
+    "vuetify": "^1.4.4",
+    "vuex": "^3.0.1",
+    "vuex-router-sync": "^5.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

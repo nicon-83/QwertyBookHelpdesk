@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>QB</AssemblyName>
+    <RootNamespace>QB</RootNamespace>
+    <Configurations>Debug;Release;Debug_without_HMR</Configurations>
+    <UserSecretsId>57160f58-28bf-4970-8a93-42397c85bc72</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG;TEST_DATABASE;HMR</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_without_HMR|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG;TEST_DATABASE</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Components\common\MdCustomDatepicker.vue" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+    <PackageReference Include="Node.js" Version="5.3.0" />
+    <PackageReference Include="Npm" Version="3.5.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+    <Folder Include="Assets\" />
+    <Folder Include="Views\Data\Phones\" />
+    <Folder Include="Hubs\" />
+    <Folder Include="Vue_Material_Src\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Data\Index.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Data\Html.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+﻿<!--script>
+    var x = new XMLHttpRequest()
+    x.open('GET', '@Url.Action("GetInfo", new { par1 = "azaz" })', true)
+    x.onreadystatechange = function () {
+        if (this.readyState != 4) return
+        if (
+            this.status == 200) {
+            alert(this.responseText)
+        } else {
+            alert('Ошибка')
+        }
+    }
+    x.send()
+</script-->
+
+<div id="results">
+
+</div>
+<script>
+    var x = new XMLHttpRequest()
+    x.open('GET', '@Url.Action("GetHtml")', true)
+    x.onreadystatechange = function () {
+        if (this.readyState != 4) return
+        if (this.status == 200) {
+            document.getElementById('results').innerHTML = this.responseText
+        } else {
+            alert('Ошибка')
+        }
+    }
+    x.send()
+</script>

@@ -1,0 +1,15 @@
+/node_modules/
+/obj/
+/bin/
+/App_Code/
+*.csproj.user
+/.idea/
+Web.config
+Web.Trace.config
+/Vue_Material_Src/
+/Hubs/
+/Properties/
+/wwwroot/Attachments
+/wwwroot/dist/main*
+appsettings.json
+appsettings.Development.json
